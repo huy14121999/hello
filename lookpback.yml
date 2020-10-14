@@ -4,7 +4,7 @@
   gather_facts: no
   
   tasks:
-    - name: Set loobpack ipv4 address
+    - name: dat ip cho loopback
       ios_l3_interface:  
         name: loobpack {{ item.name }}
         ipv4: 10.0.{{ item.number}}.1/24
