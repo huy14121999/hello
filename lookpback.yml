@@ -3,7 +3,6 @@
   gather_facts: no
   tasks:
     - name: Set loopdack ipv4 address
-      ios_13_interface:
         name: loobpack {{ item.name }}
         ipv4: 10.0.{{ item.number}}.1/24
       with_itmes:
